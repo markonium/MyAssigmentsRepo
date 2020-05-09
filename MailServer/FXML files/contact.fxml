@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="476.0" prefWidth="495.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eg.edu.alexu.csd.datastructure.mailServer.ContactController">
+   <children>
+      <Button layoutX="373.0" layoutY="357.0" mnemonicParsing="false" onAction="#createcontact" text="Create new contact" textFill="#31bd1f">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <CheckBox fx:id="c1" layoutX="14.0" layoutY="62.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="13.0" />
+      <Button fx:id="b1" layoutX="45.0" layoutY="59.0" mnemonicParsing="false" onAction="#details" prefHeight="26.0" prefWidth="174.0" textFill="#0318ff">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <CheckBox fx:id="c2" layoutX="14.0" layoutY="98.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="13.0" />
+      <Button fx:id="b2" layoutX="45.0" layoutY="95.0" mnemonicParsing="false" onAction="#details" prefHeight="26.0" prefWidth="174.0" textFill="#0318ff">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <CheckBox fx:id="c3" layoutX="14.0" layoutY="138.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="13.0" />
+      <Button fx:id="b3" layoutX="45.0" layoutY="135.0" mnemonicParsing="false" onAction="#details" prefHeight="26.0" prefWidth="174.0" textFill="#0318ff">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <CheckBox fx:id="c4" layoutX="14.0" layoutY="176.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="13.0" />
+      <Button fx:id="b4" layoutX="45.0" layoutY="173.0" mnemonicParsing="false" onAction="#details" prefHeight="26.0" prefWidth="174.0" textFill="#0318ff">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <CheckBox fx:id="c5" layoutX="14.0" layoutY="214.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="13.0" />
+      <Button fx:id="b5" layoutX="45.0" layoutY="211.0" mnemonicParsing="false" onAction="#details" prefHeight="26.0" prefWidth="174.0" textFill="#0318ff">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <CheckBox fx:id="c6" layoutX="14.0" layoutY="254.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="13.0" />
+      <Button fx:id="b6" layoutX="45.0" layoutY="251.0" mnemonicParsing="false" onAction="#details" prefHeight="26.0" prefWidth="174.0" textFill="#0318ff">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <CheckBox fx:id="c7" layoutX="14.0" layoutY="290.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="13.0" />
+      <Button fx:id="b7" layoutX="45.0" layoutY="287.0" mnemonicParsing="false" onAction="#details" prefHeight="26.0" prefWidth="174.0" textFill="#0318ff">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <CheckBox fx:id="c8" layoutX="14.0" layoutY="326.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="13.0" />
+      <Button fx:id="b8" layoutX="45.0" layoutY="323.0" mnemonicParsing="false" onAction="#details" prefHeight="26.0" prefWidth="174.0" textFill="#0318ff">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <CheckBox fx:id="c9" layoutX="14.0" layoutY="362.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="13.0" />
+      <Button fx:id="b9" layoutX="45.0" layoutY="359.0" mnemonicParsing="false" onAction="#details" prefHeight="26.0" prefWidth="174.0" textFill="#0318ff">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <CheckBox fx:id="c10" layoutX="14.0" layoutY="398.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="13.0" />
+      <Button fx:id="b10" layoutX="45.0" layoutY="395.0" mnemonicParsing="false" onAction="#details" prefHeight="26.0" prefWidth="174.0" textFill="#0318ff">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Label layoutX="45.0" layoutY="21.0" prefHeight="26.0" prefWidth="174.0" text="Contacts" textFill="#090909">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="251.0" layoutY="165.0" prefHeight="26.0" prefWidth="181.0" text="*Click on contact to view details." textFill="#072ce8" />
+      <Label layoutX="254.0" layoutY="186.0" prefHeight="26.0" prefWidth="280.0" text="*You can select multible contacts (Max 10)" textFill="#3737f2" />
+      <Label layoutX="260.0" layoutY="205.0" prefHeight="18.0" prefWidth="182.0" text="to delete or send an email." textFill="#3737f2" />
+      <Button layoutX="388.0" layoutY="432.0" mnemonicParsing="false" onAction="#delete" text="Delete selected" textFill="#bd2d20">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="219.0" layoutY="432.0" mnemonicParsing="false" onAction="#send" text="Send email to selected" textFill="#31bd1f">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="394.0" layoutY="75.0" mnemonicParsing="false" onAction="#nextPage" text="&gt;">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="290.0" layoutY="75.0" mnemonicParsing="false" onAction="#prevPage" text="&lt;">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="382.0" layoutY="53.0" prefHeight="18.0" prefWidth="59.0" text="Next page">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="278.0" layoutY="53.0" prefHeight="18.0" prefWidth="59.0" text="Prev page">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="contacterrorlabel" layoutX="172.0" layoutY="12.0" prefHeight="27.0" prefWidth="287.0" textFill="#ff4605">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="376.0" layoutY="286.0" mnemonicParsing="false" onAction="#search" prefHeight="26.0" prefWidth="136.0" text="Search" />
+      <TextField fx:id="contactfilter" layoutX="378.0" layoutY="252.0" promptText="Type a contact name" />
+      <Button fx:id="back" layoutX="12.0" layoutY="427.0" mnemonicParsing="false" onAction="#back" text="&lt;">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="57.0" layoutY="437.0" prefHeight="18.0" prefWidth="59.0" text="Back">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

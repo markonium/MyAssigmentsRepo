@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane onDragDetected="#compose" prefHeight="455.0" prefWidth="545.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eg.edu.alexu.csd.datastructure.mailServer.aftersigninController">
+   <children>
+      <Label fx:id="lname" layoutX="14.0" layoutY="20.0" prefHeight="34.0" prefWidth="369.0" textFill="#001eff">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="inbox" layoutX="14.0" layoutY="121.0" mnemonicParsing="false" onAction="#emails" prefHeight="39.0" prefWidth="115.0" text="Inbox" textFill="#1ebd50">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="sent" layoutX="14.0" layoutY="171.0" mnemonicParsing="false" onAction="#emails" prefHeight="39.0" prefWidth="115.0" text="Sent" textFill="#c720bd">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="draft" layoutX="14.0" layoutY="221.0" mnemonicParsing="false" onAction="#emails" prefHeight="39.0" prefWidth="115.0" text="Draft" textFill="#0431d5">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="trash" layoutX="14.0" layoutY="272.0" mnemonicParsing="false" onAction="#emails" prefHeight="39.0" prefWidth="115.0" text="Trash" textFill="#bd0808">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="contact" layoutX="402.0" layoutY="121.0" mnemonicParsing="false" onAction="#gotocontact" prefHeight="39.0" prefWidth="128.0" text="My contact" textFill="#bd1e9a">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="401.0" layoutY="171.0" mnemonicParsing="false" onAction="#compose" prefHeight="39.0" prefWidth="128.0" text="compose" textFill="#8a1ebd">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="signout" layoutX="341.0" layoutY="391.0" mnemonicParsing="false" onAction="#signout" prefHeight="39.0" prefWidth="170.0" text="Sign out" textFill="#ff1111">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="lname1" layoutX="391.0" layoutY="64.0" prefHeight="35.0" prefWidth="135.0" text="Mail server" textFill="#001eff">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="14.0" layoutY="391.0" mnemonicParsing="false" onAction="#SwitchtoSettings" prefHeight="34.0" prefWidth="170.0" text="Settings" textFill="#1ebd50">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="draftbtn" layoutX="14.0" layoutY="64.0" prefHeight="34.0" prefWidth="369.0" textFill="#ff1100">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="f1" layoutX="206.0" layoutY="121.0" mnemonicParsing="false" onAction="#emails" prefHeight="39.0" prefWidth="170.0" textFill="#0431d5">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="f3" layoutX="206.0" layoutY="221.0" mnemonicParsing="false" onAction="#emails" prefHeight="39.0" prefWidth="170.0" textFill="#0431d5">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="f2" layoutX="206.0" layoutY="171.0" mnemonicParsing="false" onAction="#emails" prefHeight="39.0" prefWidth="170.0" textFill="#0431d5">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="f4" layoutX="206.0" layoutY="272.0" mnemonicParsing="false" onAction="#emails" prefHeight="39.0" prefWidth="170.0" textFill="#0431d5">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="257.0" layoutY="96.0" prefHeight="18.0" prefWidth="96.0" text="User folders">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="206.0" layoutY="327.0" prefHeight="18.0" prefWidth="243.0" text="*To rename/modify click the folder name">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="inboxnew" layoutX="131.0" layoutY="132.0" prefHeight="18.0" prefWidth="74.0" textFill="RED">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button layoutX="449.0" layoutY="14.0" mnemonicParsing="false" onAction="#refresh" text="Refresh" textFill="#0f1a0d">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
